@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{title}}</title>
+<style>
+
+    body {
+    
+        background: #fbf;
+    }
+
+    h2, h4, p, label, form{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+    }
+.inp {
+    display: flex;
+    align-items: center;
+}
+
+
+
+</style>
+
+    
+</head>
+<body dir="rtl">
+    
+<h2> شركة التفاني للإتصالات والتقنية </h2>
+
+<p>هذا شرح لكيفية تطوير ونشر التطبيقات عبر الانترنت من الصفر . </p>
+
+<br>
+<br>
+
+<h4> الرجاء ادخال اسمك</h4>
+
+<form action="/" method="post">
+<label for="name"> الاسم</label>
+<input class="inp" type="text" name="name" id="" placeholder="عبد المعين">
+
+<input type="submit" value="حفظ">
+</form>
+
+<br>
+
+{% for name in names  %}
+
+<p> {{ name }} </p>
+
+
+{% endfor %}
+
+</body>
+</html>
